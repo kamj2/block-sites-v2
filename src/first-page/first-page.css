@@ -1,0 +1,217 @@
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Body Styling */
+  body {
+    font-family: 'Arial', sans-serif;
+    background-color: #0f1923;
+    color: #ffffff;
+    line-height: 1.6;
+    margin: 0;
+    font-family: "Almarai", serif;
+    opacity: 0;
+    animation: fadeIn 1s forwards; /* Fade in effect */
+    overflow: hidden;
+  }
+  
+  /* Logo Styling */
+  .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #00ff88;
+    animation: slideIn 1s ease-out forwards;
+    opacity: 0;
+  }
+  
+  /* Hero Section Styling */
+  .hero {
+    text-align: center;
+    padding: 4rem 2rem;
+    background: linear-gradient(to top, #311e39, #0f1923);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    animation: slideIn 1.5s ease-out forwards;
+    opacity: 0;
+  }
+  
+  /* Hero Content */
+  .hero-content {
+    max-width: 700px;
+    margin-top: 2rem;
+  }
+  
+  /* Hero Headline */
+  .hero h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    animation: fadeIn 1s ease-out forwards;
+    opacity: 0;
+  }
+  
+  /* Hero Paragraph */
+  .hero p {
+    margin: 1rem 0;
+    font-size: 1.2rem;
+    color: #b0b0b0;
+    animation: fadeIn 1.2s ease-out forwards;
+    opacity: 0;
+  }
+  
+  /* Hero Buttons */
+  .hero-buttons {
+    margin-top: 2rem;
+  }
+  
+  .btn {
+    padding: 0.8rem 1.5rem;
+    margin: 0 0.5rem;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    opacity: 0;
+    animation: fadeIn 1.5s ease-out forwards;
+  }
+  
+  .download-btn {
+    background-color: rgba(249, 249, 249, 0.138);
+    color: #121212;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    color: white;
+    font-family: "Almarai", serif;
+    animation: fadeIn 1.8s ease-out forwards;
+  }
+  
+  .btn:hover {
+    background-color: rgba(255, 255, 255, 0.212);
+  }
+  
+  /* Partners Section */
+  .partners {
+    margin-top: 3rem;
+    text-align: center;
+  }
+  
+  .partners p {
+    color: #b0b0b0;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+  }
+  
+  .logos img {
+    margin: 0 0.5rem;
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
+    animation: fadeIn 2s ease-out forwards;
+    opacity: 0;
+  }
+  
+  /* To Window Link */
+  .to-window {
+    color: white;
+    cursor: pointer;
+    transition: all 0.4s ease-in-out;
+  }
+  
+  .to-window:hover { 
+    opacity: 0.5;
+  }
+  
+  /* Animations */
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes slideIn {
+    0% {
+      transform: translateY(50px);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  
+  /* Media Queries for Responsiveness */
+  
+  /* Mobile Screens */
+  @media (max-width: 768px) {
+    body {
+      font-size: 14px; /* Smaller font size for mobile */
+    }
+  
+    .hero {
+      padding: 2rem 1rem; /* Less padding on mobile */
+    }
+  
+    .hero h1 {
+      font-size: 2rem; /* Smaller headline */
+    }
+  
+    .hero p {
+      font-size: 1rem; /* Smaller paragraph text */
+    }
+  
+    .btn {
+      padding: 0.6rem 1.2rem;
+      font-size: 0.9rem; /* Adjust button size */
+    }
+  
+    .logos img {
+      width: 40px;
+      height: 40px; /* Smaller logo images */
+    }
+  
+    .partners p {
+      font-size: 0.9rem; /* Smaller text for partners section */
+    }
+  }
+  
+  /* Tablet Screens */
+  @media (max-width: 1024px) {
+    body {
+      font-size: 16px; /* Slightly larger font size for tablet */
+    }
+  
+    .hero {
+      padding: 3rem 1.5rem; /* Moderate padding for tablet */
+    }
+  
+    .hero h1 {
+      font-size: 2.2rem; /* Adjust headline size for tablet */
+    }
+  
+    .hero p {
+      font-size: 1.1rem; /* Adjust paragraph text for tablet */
+    }
+  
+    .btn {
+      padding: 0.7rem 1.3rem;
+      font-size: 1rem; /* Adjust button size */
+    }
+  
+    .logos img {
+      width: 45px;
+      height: 45px; /* Slightly larger logo images for tablet */
+    }
+  
+    .partners p {
+      font-size: 1rem; /* Adjust text size for partners section */
+    }
+  }
+  

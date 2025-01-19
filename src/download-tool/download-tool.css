@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Almarai&display=swap');
+
+/* التصميم العام */
+.download-page {
+    text-align: center;
+    padding: 3rem;
+    background: linear-gradient(to top, #311e39, #0f1923);
+    color: white;
+    min-height: 100vh;
+    font-family: 'Almarai', sans-serif;
+    opacity: 0;
+    animation: fadeIn 1.5s ease-out forwards;
+}
+
+.download-page h1 {
+    margin-bottom: 2rem;
+    font-size: 2rem;
+    color: white;
+}
+
+/* ملاحظة */
+.note {
+    font-size: 0.9rem;
+    color: #ffcd6b;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 0.5rem 1rem;
+    margin-bottom: 2rem;
+    border-radius: 7px;
+    display: inline-block;
+    animation: fadeIn 1s ease-out forwards 0.5s;
+}
+
+.more-details { 
+    color: #ffcd6b;
+}
+/* تصميم مربع البحث */
+.search-container {
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+.search-box {
+    padding: 0.8rem;
+    border: none;
+    border-radius: 6px;
+    width: 350px;
+    font-size: 0.8rem;
+    background: linear-gradient(to right, #2f2639, #453358, #442f58);
+    color: white;
+    outline: none;
+    transition: all 0.3s ease;
+    text-align: end;
+    font-family: "Almarai", serif;
+    border: 1px solid #ffffff2e;
+}
+
+.search-box::placeholder {
+    color: rgba(255, 255, 255, 0.413);
+}
+
+.search-box:focus {
+    background-color: rgba(255, 255, 255, 0.097);
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.17);
+}
+
+/* تصميم الجدول */
+.download-table {
+    width: 25%;
+    margin: 5px auto;
+    border-radius: 15px;
+    border-collapse: separate;
+    border-spacing: 10px;
+    opacity: 0;
+    animation: fadeIn 1.5s ease-out forwards 1s;
+}
+
+.download-table th,
+.download-table td {
+    padding: 1rem;
+    text-align: center;
+    border-radius: 6px;
+    color: white;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.download-table th {
+    background: linear-gradient(to right, #2f2639, #453358, #442f58);
+    color: #ffffff;
+}
+
+.download-table td {
+    background: linear-gradient(to right, #352738, #44314c, #563661);
+    color: #f1f1f1;
+    transition: background-color 0.3s ease;
+}
+
+.download-table td:hover {
+    background-color: #6e497b;
+}
+
+/* الروابط */
+.download-table a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: text-decoration 0.3s ease;
+}
+
+.download-table a:hover {
+    text-decoration: underline;
+}
+
+/* تأثيرات الأنميشين */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+/* التصميم المتجاوب للأجهزة المختلفة */
+@media (max-width: 768px) {
+    .download-page {
+        padding: 2rem;
+    }
+
+    .search-box {
+        width: 250px;
+    }
+
+    .download-table {
+        width: 80%;
+    }
+}
+
+@media (max-width: 1024px) {
+    .download-page {
+        padding: 2.5rem;
+    }
+
+    .search-box {
+        width: 300px;
+    }
+
+    .download-table {
+        width: 60%;
+    }
+}
