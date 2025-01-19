@@ -5,14 +5,14 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
+// تحديد المسار الذي يتم نشر التطبيق عليه
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <BrowserRouter>
+    <BrowserRouter basename="/block-sites-v2">
       <App />
     </BrowserRouter>
   </React.StrictMode>
 );
-
 
 reportWebVitals();
